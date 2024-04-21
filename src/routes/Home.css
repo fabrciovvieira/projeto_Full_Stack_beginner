@@ -1,0 +1,212 @@
+.container-home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--main-color);
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 8.5rem;
+}
+
+.container-home .info-head {
+    align-self: flex-start; 
+    font-size: 1.2rem;
+    background-color: #B71515;
+    padding: 0.4rem 1.1rem;
+    border-radius: 25px;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+
+
+}
+
+.container-info {
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem 4rem;
+}
+.destaques {
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+
+}
+.destaques:hover {
+    background-color: #B71515;
+}
+.img-news {
+    width: 300px;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+.destaques .hour { 
+    text-align: left;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+}
+.destaques h2 {
+    margin-left: 3rem;
+}
+
+.container-resume-fixtures {
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
+
+}
+
+.container-resume-fixtures .info-head {
+    align-self: flex-start; 
+    font-size: 1.2rem;
+    background-color: var(--destaques);
+    color: #fff;
+    padding: 0.4rem 1.1rem;
+    border-radius: 25px;
+    margin-left: 5.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.container-matches {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem;
+}
+.destaques h2, 
+.destaques-matches h2 {
+    text-align: left;
+}
+.destaques-matches {
+    border: 1px solid #cdcdcd;
+}
+.dayMatch-and-liga {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem;
+}
+.info-day-macth {
+    display: flex;
+    flex-direction: column;
+}
+.info-day-macth .title-game,
+.info-day-macth .daymatch {
+    text-align: left;
+    color: var(--text-on-white);
+}
+.logo-match img{
+    width: 75px;
+    height: auto;
+    margin: 0 0 auto;
+}
+
+.time-home {
+    display: flex;
+    justify-content: left;
+    
+
+}
+.border {
+    display: block;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.704);
+    margin: auto 1rem;
+
+}
+.time-away {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 2rem;
+}
+.time-home h2,
+.time-away h2 {
+    align-self: center;
+    color: var(--text-on-white);
+    font-size: 1.2rem;
+}
+.time-home img, 
+.time-away img { 
+    width: 75px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .container-info {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 1rem;
+    }
+
+    .img-news {
+        width: 280px;
+
+    }
+
+    .destaques h2, 
+    .destaques-matches h2 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .destaques .hour,
+    .destaques h2 { 
+        margin-left: 0.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-info {
+        gap: 2rem;
+        grid-template-columns: 2fr 2fr;
+        padding: 0 1rem;
+    }
+    .destaques .hour,
+    .destaques h2 { 
+        margin-left: 0.8rem;
+    }
+}
+@media (max-width: 425px) {
+    .container-home {
+        margin-top: 2rem;
+    }
+
+    .destaques .hour,
+    .destaques h2 { 
+        margin-left: 1.4rem;
+    } 
+
+    .container-home .info-head {
+        align-items: center;
+        margin: 2rem auto 2rem;
+    
+    
+    }
+
+    .container-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-matches {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .destaques .hour,
+    .destaques h2 { 
+        margin-left: 0.1rem;
+    } 
+}

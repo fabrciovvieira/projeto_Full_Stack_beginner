@@ -1,0 +1,172 @@
+.container-elenco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12rem;
+    background-color: #fff;
+    width: 100vw;
+}
+.veterano-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.grid-elenco-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid-elenco-pos {
+    display: grid;
+    justify-content: center; 
+    gap: -2rem; 
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 0 4rem; 
+    margin-bottom: 2rem; 
+}
+.header-elenco {
+    display: flex;
+    justify-content: flex-end;
+    margin: 3rem;
+}
+.header-elenco select {
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: var(--text-on-white);
+}
+.header-h1-elenco {
+    display: flex;
+    background: url('../../public/foto-pg-elenco.png');
+    background-size: cover; 
+    background-position: initial; 
+    background-repeat: no-repeat; 
+    height: 145px; 
+
+    border-bottom: 4px solid gray;
+    max-width: 100%;
+
+}
+
+.header-h1-elenco h1 {
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.title-elenco {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.title-elenco h2 {
+    font-size: 2.4rem;
+    color: var(--text-on-white);
+    font-weight: 600;
+}
+.position {
+    display: flex;
+    justify-content: left;
+}
+
+.info-player {
+    position: relative;
+    width: 243px;
+    height: 70px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    background-color: var(--second-color);
+}
+.info-player h2,
+.info-player h3 {
+    color: #fff;
+}
+.info-player h3 {
+    font-weight: lighter;
+}
+.position h2 {
+    margin-left: 3rem;
+    border-left: 2px solid var(--second-color);
+    color: var(--text-on-white);
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+
+.players {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;;
+}
+
+.all-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container-elenco {
+        margin-top: 11rem;
+        width: 100vw;
+    }
+    .grid-elenco-pos {
+        display: grid;
+        justify-content: center; 
+        gap: 0rem; 
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .header-elenco {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem;
+    }
+    .players {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+        align-items: center;;
+    }
+}
+
+@media (max-width: 425px) {
+    .container-elenco {
+        margin-top: 2rem;
+        width: 100vw;
+    }
+    .grid-elenco-pos {
+        display: flex;
+        justify-content: center; 
+        gap: 0rem; 
+        flex-direction: column;
+
+    }
+    .header-elenco {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem;
+    }
+    .players {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;;
+    }
+}
+@media (max-width: 425px) {
+
+}

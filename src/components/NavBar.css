@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 17rem;
+    z-index: 1000;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+header .nav-btn {
+    padding: 7px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1024px) {
+    header {
+        gap: 11rem;
+    }
+    header nav {
+        font-size: 1.3rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        gap: 5rem;
+    }
+    header nav {
+        font-size: 1rem;
+        gap: 1.4rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        background-color: var(--main-color);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+		transform: translateY(0);
+	}
+
+    nav .nav-close-btn {
+		position: absolute;
+		top: 1rem;
+		right: 0;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+
+
+}

@@ -1,0 +1,154 @@
+.container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12rem;
+    background-color: #fff;
+    width: 100vw;
+
+}
+
+.head-about {
+    display: flex;
+    position: relative;
+    background: url('../../public//foto-time-1.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 145px; 
+    border-bottom: 4px solid gray;
+    max-width: 100%;
+
+}
+
+.head-about h1 {
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.sub-about {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.subtitulos-about {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.row-text p,
+.next-row-text p,
+.last-text-row p,
+.middle-text {
+    color: var(--text-on-white);
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.row-text {
+    gap: 0.5rem;
+    flex-direction: column;
+    display: flex;
+}
+.part-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    margin: auto 7rem;
+    gap: 1rem;
+}
+
+.aspirant-foto {
+    width: 400px;
+    height: auto;
+}
+
+.middle-text {
+    display: flex;
+    justify-content: center;
+    text-align: left;    
+    margin: 0.5rem 7rem;
+}
+
+.next-row-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    margin: 0.5rem 7rem;
+    gap: 1rem;
+}
+
+.sede-foto {
+    width: 400px;
+    height: 200px;
+}
+
+
+@media (max-width: 1024px) {
+    .aspirant-foto {
+        width: 300px;
+        height: auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .next-row-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin: 0.5rem 7rem;
+        gap: 1rem;
+    }
+    .second-image-about {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+
+    
+    .container-about {
+        margin-top: 3rem;
+    
+    }
+    .sub-about {
+        gap: 0.5rem;
+    }
+    
+    .subtitulos-about {
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 0.7rem;
+    }
+
+    .image-about {
+        display: flex;
+        justify-content: center;
+    }
+    .part-one,
+    .middle-text,
+    .last-text-row {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto 2rem;
+
+    }
+    .row-text p, 
+    .middle-text,
+    .last-text-row p{
+        text-align: center;
+    }
+    .next-row-text {
+        margin: 0.5rem 2rem;
+
+    }
+}
