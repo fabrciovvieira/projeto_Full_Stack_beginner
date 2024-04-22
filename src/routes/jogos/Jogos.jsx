@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import beiraMarFetch from '../../axios/config';
-import { formatDistanceToNow, format, min, isBefore } from 'date-fns'; // Importe isBefore aqui
+import { formatDistanceToNow, format, min, isBefore } from 'date-fns';
 import { ptBR } from 'date-fns/locale/pt-BR';
 import './Jogos.css';
 import logo from '../../../public/logo.png';
